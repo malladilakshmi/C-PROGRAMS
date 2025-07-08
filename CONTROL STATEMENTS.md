@@ -66,7 +66,7 @@ int main()
         return 0;
 }
 /*****************************************************************************************************************/
-//3.WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS POSITIVE OR NEGATIVE?
+//3a.WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS POSITIVE OR NEGATIVE?
 #include<stdio.h>
 int checksign(int num)
 {
@@ -74,10 +74,14 @@ int checksign(int num)
         {
                 printf("positive number\n");
         }
-        else
+        else if(num<0)
         {
                 printf("negative number\n");
         }
+else
+{
+printf("zero number");
+}
 }
 int main()
 {
