@@ -166,6 +166,160 @@ int main()
         displayvalues(m);
         return 0;
 }
+/******************************************************************************************************/
+7.WRITE A C PROGRAM TO FIND THE LARGEST OF THREE NUMBERS?
+#include<stdio.h>
+int largestofthreenumbers(int a,int b,int c)
+{
+        int max=a;
+        if(b>max)
+        {
+                max=b;
+        }
+        if(c>max)
+        {
+                max=c;
+        }
+        return max;
+}
+int main()
+{
+        int num1,num2,num3,result;
+        printf("enter three numbers:\n");
+        scanf("%d%d%d",&num1,&num2,&num3);
+        result=largestofthreenumbers(num1,num2,num3);
+        printf("the largest number is %d\n",result);
+        return 0;
+}
+                                  (or)
+#include <stdio.h>
+int findLargest(int a, int b, int c) {
+    if (a >= b && a >= c) {
+        return a;
+    } else if (b >= a && b >= c) {
+        return b;
+    } else {
+        return c;
+    }
+}
+
+int main() {
+    int num1, num2, num3, largest;
+   printf("Enter three numbers:\n");
+    scanf("%d %d %d", &num1, &num2, &num3);
+   largest = findLargest(num1, num2, num3);
+   printf("The largest number is %d\n", largest);
+   return 0;
+}
+                                           (or)
+
+#include <stdio.h>
+int findLargest(int a, int b, int c) {
+    return (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+}
+int main() {
+    int num1, num2, num3, largest;
+    printf("Enter three numbers:\n");
+    scanf("%d %d %d", &num1, &num2, &num3);
+    largest = findLargest(num1, num2, num3);
+    printf("The largest number is %d\n", largest);
+return 0;
+}
+ Ternary Operator Syntax:
+(condition) ? (if true) : (if false);
+return (a > b) 
+       ?          ((a > c) ? a : c) 
+       :          ((b > c) ? b : c);
+/***************************************************************************************************************************/
+8.WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS A VOWEL OR CONSONANT?
+#include<stdio.h>
+#include<ctype.h>
+int isvowel(char ch)
+{
+        ch=tolower(ch);
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+        {
+                return 1;
+        }
+        else
+        {
+                return 0;
+        }
+}
+int main()
+{
+        char ch;
+        printf("enter a character:");
+        scanf("%c",&ch);
+        if((ch>='A' && ch<='Z')||(ch>='a'||ch<='z'))
+        {
+                if(isvowel(ch))
+                {
+                        printf("%c is a vowel.\n",ch);
+                }
+                else
+                {
+                        printf("is a consonant.\n");
+                }
+        }
+                else
+                {
+                        printf("is not an alphabet.\n");
+                }
+                return 0;
+        }
+/**************************************************************************************************************/
+/****************************************************************************************************************************/
+12.WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS UPPERCASE OR LOWERCASE?
+#include<stdio.h>
+#include<ctype.h>
+int loweruppercase(char ch)
+{
+        if(isupper(ch))
+                        {
+                        printf("is an uppercase letter");
+                        }
+        else if(islower(ch))
+        {
+                printf("is a lowercase letter");
+        }
+        else
+        {
+                printf("is not a letter");
+        }
+}
+int main()
+{
+        char ch;
+        printf("enter the letter\n");
+        scanf("%c",&ch);
+        loweruppercase(ch);
+        return 0;
+}
+/*********************************************************************************************************************************/
+10.WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS AN ALPHABET OR NOT?
+#include<stdio.h>
+#include<ctype.h>
+void alphabet(char ch)
+{
+        if(isalpha(ch))
+                        {
+                                printf("is a alphabet\n");
+                        }
+        else
+        {
+                printf("is not a alphabet\n");
+        }
+}
+int main()
+{
+        char ch;
+        printf("enter the letter\n");
+        scanf("%c",&ch);
+        alphabet(ch);
+        return 0;
+}
+/***********************************************************************************************************/
 
 ```                         
 
