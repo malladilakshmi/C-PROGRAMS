@@ -23,7 +23,7 @@ int main()
         checkequality(num1,num2);
         return 0;
 }
-/************************************************************************************************************************************/
+/***************************************************************************************************************/
 //2.WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS EVEN OR ODD?
 #include<stdio.h>
 int evenodd(int num)
@@ -45,7 +45,7 @@ int main()
         evenodd(n);
         return 0;
 }
-/******************************************************************************************************************************/
+/*********************************************************************************************************/
 //3.WRITE A C PROGRAM TO CHECK WHETHER A GIVEN NUMBER IS POSITIVE OR NEGATIVE?
 #include<stdio.h>
 int checksign(int num)
@@ -230,7 +230,7 @@ return 0;
 return (a > b) 
        ?          ((a > c) ? a : c) 
        :          ((b > c) ? b : c);
-/***************************************************************************************************************************/
+/*************************************************************************************************************/
 8.WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS A VOWEL OR CONSONANT?
 #include<stdio.h>
 #include<ctype.h>
@@ -269,8 +269,7 @@ int main()
                 return 0;
         }
 /**************************************************************************************************************/
-/****************************************************************************************************************************/
-12.WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS UPPERCASE OR LOWERCASE?
+9.WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS UPPERCASE OR LOWERCASE?
 #include<stdio.h>
 #include<ctype.h>
 int loweruppercase(char ch)
@@ -296,7 +295,7 @@ int main()
         loweruppercase(ch);
         return 0;
 }
-/*********************************************************************************************************************************/
+/**********************************************************************************************************/
 10.WRITE A C PROGRAM TO CHECK WHETHER A CHARACTER IS AN ALPHABET OR NOT?
 #include<stdio.h>
 #include<ctype.h>
